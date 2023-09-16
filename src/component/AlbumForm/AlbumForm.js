@@ -6,6 +6,7 @@ import { useState } from "react";
 import "./AlbumForm.css";
 import { ToastContainer,toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import folder from "../images/folder.png"
 
 function AlbumForm({addData}){
     const [form, setForm] = useState('');
@@ -15,10 +16,10 @@ function AlbumForm({addData}){
         e.preventDefault();
         const docRef = await addDoc(collection(db, "albums"),{
             name: form,
-            ImageUrl: "https://cdn-user-icons.flaticon.com/115078/115078006/1693738750346.svg?token=exp=1693739945~hmac=65e6f34e01f44ffb27f5cb51b3836e4f",
+            ImageUrl: folder,
             createdOn: new Date()
         })
-        addData({name: form, ImageUrl: "https://cdn-user-icons.flaticon.com/115078/115078006/1693738750346.svg?token=exp=1693739945~hmac=65e6f34e01f44ffb27f5cb51b3836e4f"})
+        addData({name: form, ImageUrl: folder})
         setForm('')
     }
 
