@@ -1,0 +1,174 @@
+/* image contaner style */
+.showimageformcontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+/* back button images style */
+.show-image-back{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+/* heading style */
+.image-form-heading{
+    margin-top: 5%;
+}
+
+/* search contaner style */
+.show-image-search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%; 
+}
+/* search icon style */
+.cross{
+    position: absolute;
+    right: 25%; 
+}
+
+/* search input style */
+.search-input{
+    padding: 8px;
+    border: 2px solid rgb(247, 252, 252);
+    background-color: transparent;
+    color: rgb(251, 251, 251);
+    font-weight: bolder;
+    width: calc(72% - 60px); 
+}
+
+/* toggle button style */
+.toggle-image-form-btn{
+    position: absolute;
+    right: 0;
+    width: 20%; 
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* image list container */
+.imageList{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+/* image list item style */
+.image-list-item{
+    width: 20%;
+    height: 100px;
+    border: 10px solid white;
+    border-bottom: 40px solid white;
+    color: black;
+    text-align: left;
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+/* image list icons style */
+.image-list-icons{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: -6%;
+    visibility: hidden;
+}
+
+/* update button style */
+.update-btn{
+    background-color: rgb(52, 158, 44);
+    border-radius: 50%;
+}
+
+/* delete button style */
+.delete-btn{
+    background-color: rgb(42, 102, 105);
+    border-radius: 50%;
+    margin-left: 1%;
+}
+
+/* hover the delete and update button */
+.image-list-item:hover .image-list-icons{
+    visibility: visible;
+}
+
+/* code for make site responsive */
+@media (max-width: 800px) {
+    /* CSS styles go here */
+    .show-image-search{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 50%; 
+    }
+    .toggle-image-form-btn{
+        position: absolute;
+        right: 0;
+        width: 30%; 
+        height: 100%;
+        color: white;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .cross{
+        position: absolute;
+        /* right: 1%;  */
+        left: 60%;
+    }
+    .search-input{
+        padding: 8px;
+        border: 2px solid rgb(247, 252, 252);
+        background-color: transparent;
+        color: rgb(251, 251, 251);
+        font-weight: bolder;
+        width: calc(65% - 60px); 
+    }
+}
+
+@media (max-width: 600px) {
+    /* CSS styles go here */
+    .show-image-search{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 50%; 
+    }
+    .toggle-image-form-btn{
+        position: absolute;
+        right: 0;
+        width: 30%; 
+        height: 100%;
+        color: white;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .cross{
+        position: absolute;
+        /* right: 1%;  */
+        left: 55%;
+    }
+    .search-input{
+        padding: 8px;
+        border: 2px solid rgb(247, 252, 252);
+        background-color: transparent;
+        color: rgb(251, 251, 251);
+        font-weight: bolder;
+        width: calc(63% - 60px); 
+    }
+}
+
+

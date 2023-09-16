@@ -1,0 +1,51 @@
+/* Album Container style */
+.AlbumFormContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* toogle the album form */
+.toggleButton {
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* ul tag style */
+.albumlist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+/* li tag style */
+.album-list-item {
+    border: 5px solid rgb(207, 184, 198);
+    border-bottom: 60px solid rgb(207, 184, 198);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 120px;
+    text-align: center;
+    color: #3a3750;
+}
+
+.album-list-item:hover {
+    border: 5px solid rgb(9, 121, 200);
+    border-bottom: 60px solid rgb(9, 121, 200);
+}
+
+/* album list p tag style */
+.album-list-item p {
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bolder;
+    opacity: 5;
+}

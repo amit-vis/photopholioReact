@@ -1,0 +1,24 @@
+/* image for style */
+.imageForm{
+    border: 2px solid rgb(51, 85, 87);
+    width: 50%;
+    margin: auto;
+    margin-top: .5%;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    color: rgb(81, 114, 101);
+}
+
+/* input tag style */
+.form-input{
+    padding: 15px;
+    border-radius: 30px;
+    width: 80%;
+    margin-top: 1%;
+}
+/* image button style */
+.image-btn{
+    margin-top: 10px;
+}

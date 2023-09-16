@@ -1,0 +1,25 @@
+/* navbar container style */
+.navbar {
+    background-color: rgb(173, 183, 70);
+    width: 100%;
+    height: 50px;
+    color: beige;
+    display: flex;
+    border-radius: 5px;
+}
+
+/* nav icon image style */
+.nav-img {
+    margin-left: 20px;
+}
+
+/* navbar text style */
+.nav-icon {
+    margin-left: 20px;
+}
+
+/* navbar container style */
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
