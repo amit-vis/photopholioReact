@@ -17,8 +17,10 @@
 /* ul tag style */
 .albumlist {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
+    width: 95%;
 }
 
 /* li tag style */
@@ -41,6 +43,9 @@
 }
 
 @media (max-width: 1200px){
+    .albumlist{
+        width: 95%;
+    }
     .album-list-item {
         margin: .5%;
     
@@ -48,6 +53,9 @@
 
 }
 @media (max-width: 1100px){
+    .albumlist{
+        width: 93%;
+    }
     .album-list-item {
         margin: .8%;
     
@@ -55,6 +63,9 @@
 
 }
 @media (max-width: 1000px){
+    .albumlist{
+        width: 90%;
+    }
     .album-list-item {
         margin: 1.2%;
     
@@ -62,6 +73,9 @@
 
 }
 @media (max-width: 900px){
+    .albumlist{
+        width: 90%;
+    }
     .album-list-item {
         margin: 2%;
     
@@ -69,6 +83,9 @@
 
 }
 @media (max-width: 800px){
+    .albumlist{
+        width: 88%;
+    }
     .album-list-item {
         margin: 3%;
     
@@ -79,8 +96,11 @@
 
 }
 @media (max-width: 700px){
+    .albumlist{
+        width: 85%;
+    }
     .album-list-item {
-        margin: 4%;
+        width: 11%;
     
     }
     .album-list-item p {
@@ -91,35 +111,37 @@
 
 @media (max-width: 600px){
     .album-list-item {
-        margin: 6%;
+        width: 15%;
     
     }
     .album-list-item p {
-        margin-left: 45%;
-        font-size: 20px;
+        margin: auto;
     }
 
 }
 @media (max-width: 500px){
+    .albumlist{
+        width: 82%;
+    }
     .album-list-item {
-        margin: 8%;
+        width: 15%;
     
     }
     .album-list-item p {
-        margin-left: 55%;
-        font-size: 20px;
+        margin: auto;
     }
 
 }
 @media (max-width: 400px){
+    .albumlist{
+        width: 75%;
+    }
     .album-list-item {
-        margin: 11%;
+        width: 20%;
     
     }
     .album-list-item p {
-        margin-left: 70%;
-        font-size: 20px;
+        margin: auto;
     }
-
 }
 
