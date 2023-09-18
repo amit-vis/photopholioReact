@@ -41,6 +41,7 @@ function AlbumsList({ data, addData }) {
                   src={item.ImageUrl}
                   alt="folder-icon"
                   width="100px"
+                  className="item-image"
                 />
                 <p>{item.name}</p>
               </li>

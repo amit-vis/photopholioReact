@@ -4,12 +4,13 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./component/images/background.webp');
+  background-image: url("../src/component/images/background.jpg");
   background-size: cover;
-  background-repeat: no-repeat; /* Prevent image repeating */
-  background-attachment: fixed; /* Optional: Fixed background */
+  background-repeat: no-repeat;
   color: wheat;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

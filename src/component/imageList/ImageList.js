@@ -127,7 +127,8 @@ function ImageList({ albumName, setPage }) {
                         <img
                             src={backBtn}
                             alt="back-btn" height="50px" width="50px"
-                            onClick={() => setPage('album')} />
+                            onClick={() => setPage('album')}
+                            className="back-icon" />
                     </div>
 
                     {images.length > 0 && <h2 className="image-form-heading">{`Image in ${albumName}`}</h2>}

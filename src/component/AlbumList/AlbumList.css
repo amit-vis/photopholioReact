@@ -23,29 +23,103 @@
 
 /* li tag style */
 .album-list-item {
-    border: 5px solid rgb(207, 184, 198);
-    border-bottom: 60px solid rgb(207, 184, 198);
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-left: 1%;
-    margin-top: 1%;
-    height: 120px;
-    text-align: center;
-    color: #3a3750;
-}
+    width: 9%;
 
-.album-list-item:hover {
-    border: 5px solid rgb(9, 121, 200);
-    border-bottom: 60px solid rgb(9, 121, 200);
 }
 
 /* album list p tag style */
 .album-list-item p {
-    margin-top: 25px;
+    margin: auto;
     font-size: 25px;
     font-weight: bolder;
-    opacity: 5;
 }
+
+.album-list-item:hover .item-image{
+    transform: scale(1.2);
+    opacity: .5;
+    transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 1200px){
+    .album-list-item {
+        margin: .5%;
+    
+    }
+
+}
+@media (max-width: 1100px){
+    .album-list-item {
+        margin: .8%;
+    
+    }
+
+}
+@media (max-width: 1000px){
+    .album-list-item {
+        margin: 1.2%;
+    
+    }
+
+}
+@media (max-width: 900px){
+    .album-list-item {
+        margin: 2%;
+    
+    }
+
+}
+@media (max-width: 800px){
+    .album-list-item {
+        margin: 3%;
+    
+    }
+    .album-list-item p {
+        margin-left: 20%;
+    }
+
+}
+@media (max-width: 700px){
+    .album-list-item {
+        margin: 4%;
+    
+    }
+    .album-list-item p {
+        margin-left: 20%;
+    }
+
+}
+
+@media (max-width: 600px){
+    .album-list-item {
+        margin: 6%;
+    
+    }
+    .album-list-item p {
+        margin-left: 45%;
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 500px){
+    .album-list-item {
+        margin: 8%;
+    
+    }
+    .album-list-item p {
+        margin-left: 55%;
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 400px){
+    .album-list-item {
+        margin: 11%;
+    
+    }
+    .album-list-item p {
+        margin-left: 70%;
+        font-size: 20px;
+    }
+
+}
+

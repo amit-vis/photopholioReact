@@ -15,6 +15,7 @@
 /* heading style */
 .image-form-heading{
     margin-top: 5%;
+    margin-left: 5px;
 }
 
 /* search contaner style */
@@ -145,21 +146,14 @@
         width: 50%; 
     }
     .toggle-image-form-btn{
-        position: absolute;
-        right: 0;
+        right: 10%;
         width: 30%; 
         height: 100%;
-        color: white;
-        font-weight: bold;
-        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-        border: none;
-        border-radius: 5px;
-        box-sizing: border-box;
     }
     .cross{
         position: absolute;
         /* right: 1%;  */
-        left: 55%;
+        left: 45%;
     }
     .search-input{
         padding: 8px;
@@ -167,7 +161,66 @@
         background-color: transparent;
         color: rgb(251, 251, 251);
         font-weight: bolder;
-        width: calc(63% - 60px); 
+        width: calc(55% - 60px); 
+    }
+    .show-image-back{
+        margin-top: 1%;
+    }
+    .show-image-back .image-form-heading{
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 5%;
+        margin-left: 5px;
+    }
+    .show-image-back .back-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .image-list-item{
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 400px) {
+    /* CSS styles go here */
+    .show-image-search{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 50%; 
+    }
+    .toggle-image-form-btn{
+        position: absolute;
+        right: 15%;
+        width: 35%; 
+        height: 75%;
+    }
+    .cross{
+        position: absolute;
+        /* right: 1%;  */
+        left: 33%;
+    }
+    .search-input{
+        padding: 2px;
+        border: 1px solid rgb(247, 252, 252);
+        width: calc(59% - 60px); 
+    }
+    .show-image-back{
+        margin-top: 1%;
+    }
+    .show-image-back .image-form-heading{
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 2%;
+    }
+    .show-image-back .back-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .image-list-item{
+        margin-left: 2%;
+        margin-bottom: 2%;
     }
 }
 
