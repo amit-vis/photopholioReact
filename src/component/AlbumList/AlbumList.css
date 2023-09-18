@@ -42,6 +42,7 @@
     transition: 0.5s ease-in-out;
 }
 
+/* Responsive code */
 @media (max-width: 1200px){
     .albumlist{
         width: 95%;
