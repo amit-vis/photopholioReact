@@ -21,6 +21,10 @@ function ImageForm({ addImages, albumName, updateImage, updateToImage, updateIma
   // handle the submit function
   async function handleImageSubmit(e) {
     e.preventDefault();
+    if (imageForm.fileName.trim()==="" && imageForm.imageUrl.trim()=== ""){
+      alert("Please enter the image details.");
+      return;
+    }
     if (updateImage) {
       // Call the updateImagedata function and pass a callback to update the state after Firebase update
       await updateImagedata({
@@ -46,6 +50,9 @@ function ImageForm({ addImages, albumName, updateImage, updateToImage, updateIma
 
   // handle the notification
   const notify = ()=>{
+    if (imageForm.fileName.trim()==="" && imageForm.imageUrl.trim()=== ""){
+      return;
+    }
     if(updateImage){
     toast.success("Image updated SuccessFully!")
   }else{

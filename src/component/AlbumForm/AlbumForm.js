@@ -14,6 +14,12 @@ function AlbumForm({addData}){
     // handle the submit
     async function handleSubmit(e){
         e.preventDefault();
+
+        if (form.trim() === '') {
+            alert('Please enter a folder name.');
+            return; // Prevent further execution
+          }
+
         const docRef = await addDoc(collection(db, "albums"),{
             name: form,
             ImageUrl: folder,
@@ -31,6 +37,9 @@ function AlbumForm({addData}){
 
     // show the notification
     const notify = ()=>{
+        if(form.trim()===""){
+            return;
+        }
         toast.success("Album Added Successfully")
     }
     return(
